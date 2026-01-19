@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 # ======================================================
 BINANCE_FUTURES_API = "https://fapi.binance.com"
 
-SCAN_INTERVAL_SECONDS = 180  # Intervalo cambiado a 3 minutos
+SCAN_INTERVAL_SECONDS = 300  # Intervalo cambiado a 5 minutos
 MIN_QUOTE_VOLUME = int(os.getenv("MIN_QUOTE_VOLUME", "50000000"))  # 50M USDT
 DEDUP_MINUTES = int(os.getenv("DEDUP_MINUTES", "10"))
 REQUEST_DELAY = float(os.getenv("REQUEST_DELAY", "0.2"))
